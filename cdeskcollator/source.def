@@ -1,0 +1,4 @@
+LIBRARY "cdeskcollator"
+EXPORTS
+	setWndInfo @1
+	updateDeskBackground @2

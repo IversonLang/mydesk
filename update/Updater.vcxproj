@@ -1,0 +1,655 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Beta release|Win32">
+      <Configuration>Beta release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug proxy settings|Win32">
+      <Configuration>Debug proxy settings</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug restore version|Win32">
+      <Configuration>Debug restore version</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release without compression|Win32">
+      <Configuration>Release without compression</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release without compression|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug restore version|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug proxy settings|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release without compression|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug restore version|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Beta release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug proxy settings|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug proxy settings|Win32'">
+    <OutDir>.\Updater___Win32_Debug_proxy_settings\</OutDir>
+    <IntDir>.\Updater___Win32_Debug_proxy_settings\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta release|Win32'">
+    <OutDir>.\Beta\</OutDir>
+    <IntDir>.\Beta\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug restore version|Win32'">
+    <OutDir>.\Updater___Win32_Debug_restore_version\</OutDir>
+    <IntDir>.\Updater___Win32_Debug_restore_version\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release without compression|Win32'">
+    <OutDir>.\Updater___Win32_Release_without_compression\</OutDir>
+    <IntDir>.\Updater___Win32_Release_without_compression\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\bin\</OutDir>
+    <IntDir>..\obj\debug\updater\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug proxy settings|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;ZLIB_WINAPI;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Updater___Win32_Debug_proxy_settings\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Updater___Win32_Debug_proxy_settings\Updater.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Updater___Win32_Debug_proxy_settings\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Updater___Win32_Debug_proxy_settings\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Updater___Win32_Debug_proxy_settings\Updater.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Updater___Win32_Debug_proxy_settings\Updater.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>.\Updater___Win32_Debug_proxy_settings\Updater.exe</OutputFile>
+      <AdditionalDependencies>shell32.lib;shlwapi.lib;ws2_32.lib;zlib\zlibstat.lib;winhttp.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Beta release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_BETA;WIN32;_WINDOWS;ZLIB_WINAPI;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Beta\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Beta\Updater.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Beta\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Beta\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>exe\upx --best Beta\updater.exe</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Beta\Updater.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Beta\Updater.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>.\Beta\Updater.exe</OutputFile>
+      <AdditionalDependencies>shell32.lib;shlwapi.lib;ws2_32.lib;zlib\zlibstat.lib;winhttp.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;ZLIB_WINAPI;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\Updater.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>exe\upx --best Release\updater.exe</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\Updater.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\Updater.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>.\Release\Updater.exe</OutputFile>
+      <AdditionalDependencies>shell32.lib;shlwapi.lib;ws2_32.lib;zlib\zlibstat.lib;winhttp.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug restore version|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;ZLIB_WINAPI;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Updater___Win32_Debug_restore_version\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Updater___Win32_Debug_restore_version\Updater.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Updater___Win32_Debug_restore_version\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Updater___Win32_Debug_restore_version\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Updater___Win32_Debug_restore_version\Updater.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Updater___Win32_Debug_restore_version\Updater.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>.\Updater___Win32_Debug_restore_version\Updater.exe</OutputFile>
+      <AdditionalDependencies>shell32.lib;shlwapi.lib;ws2_32.lib;zlib\zlibstat.lib;winhttp.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release without compression|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;ZLIB_WINAPI;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Updater___Win32_Release_without_compression\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Updater___Win32_Release_without_compression\Updater.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Updater___Win32_Release_without_compression\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Updater___Win32_Release_without_compression\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Updater___Win32_Release_without_compression\Updater.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Updater___Win32_Release_without_compression\Updater.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>.\Updater___Win32_Release_without_compression\Updater.exe</OutputFile>
+      <AdditionalDependencies>shell32.lib;shlwapi.lib;ws2_32.lib;zlib\zlibstat.lib;winhttp.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_WINDOWS;ZLIB_WINAPI;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\Updater.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(OutDir)$(TargetName).bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>shlwapi.lib;ws2_32.lib;zlib\zlibstat.lib;winhttp.lib;msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+      <IgnoreSpecificDefaultLibraries> libcmt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CustomBitmapButton.cpp" />
+    <ClCompile Include="FileVersion.cpp" />
+    <ClCompile Include="GetOpt.cpp" />
+    <ClCompile Include="Markup.cpp" />
+    <ClCompile Include="md5.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="Rijndael.cpp" />
+    <ClCompile Include="SystemTray.cpp" />
+    <ClCompile Include="ThemeUtil.cpp" />
+    <ClCompile Include="Unzipper.cpp" />
+    <ClCompile Include="XHTMLStatic.cpp" />
+    <ClCompile Include="XHyperLink.cpp" />
+    <ClCompile Include="XNamedColors.cpp" />
+    <ClCompile Include="ActionPoints.cpp" />
+    <ClCompile Include="CopyFile.cpp" />
+    <ClCompile Include="CopyFolder.cpp" />
+    <ClCompile Include="EventData.cpp" />
+    <ClCompile Include="FileData.cpp" />
+    <ClCompile Include="IniData.cpp" />
+    <ClCompile Include="RegistryData.cpp" />
+    <ClCompile Include="SectionData.cpp" />
+    <ClCompile Include="ShortcutData.cpp" />
+    <ClCompile Include="EventInfo.cpp" />
+    <ClCompile Include="RestoreInfo.cpp" />
+    <ClCompile Include="RollbackInfo.cpp" />
+    <ClCompile Include="SelfUpdateInfo.cpp" />
+    <ClCompile Include="UpdateInfo.cpp" />
+    <ClCompile Include="ConnectionTest.cpp" />
+    <ClCompile Include="FtpFileObject.cpp" />
+    <ClCompile Include="HttpFileObject.cpp" />
+    <ClCompile Include="Internet.cpp" />
+    <ClCompile Include="NetworkFileObject.cpp" />
+    <ClCompile Include="Proxy.cpp" />
+    <ClCompile Include="ProxyInfo.cpp" />
+    <ClCompile Include="ProxyWPAD.cpp" />
+    <ClCompile Include="Functions.cpp" />
+    <ClCompile Include="GarbageCollector.cpp" />
+    <ClCompile Include="InternalData.cpp" />
+    <ClCompile Include="Language.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="Path.cpp" />
+    <ClCompile Include="RiskFunctions.cpp" />
+    <ClCompile Include="Sections.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="StringFunctions.cpp" />
+    <ClCompile Include="UserDataCollection.cpp" />
+    <ClCompile Include="BackUp.cpp" />
+    <ClCompile Include="CheckVersion.cpp" />
+    <ClCompile Include="Download.cpp" />
+    <ClCompile Include="Install.cpp" />
+    <ClCompile Include="InstallFiles.cpp" />
+    <ClCompile Include="InstallIni.cpp" />
+    <ClCompile Include="InstallRegistry.cpp" />
+    <ClCompile Include="Protection.cpp" />
+    <ClCompile Include="Restore.cpp" />
+    <ClCompile Include="Rollback.cpp" />
+    <ClCompile Include="SelectUpdate.cpp" />
+    <ClCompile Include="EditLicense.cpp" />
+    <ClCompile Include="HyperlinkLabel.cpp" />
+    <ClCompile Include="ResultLabel.cpp" />
+    <ClCompile Include="TransparentBitmap.cpp" />
+    <ClCompile Include="TransparentIcon.cpp" />
+    <ClCompile Include="TransparentStatic.cpp" />
+    <ClCompile Include="TreeUpdater.cpp" />
+    <ClCompile Include="WebBrowser.cpp" />
+    <ClCompile Include="AboutDlg.cpp" />
+    <ClCompile Include="AuthenticationDlg.cpp" />
+    <ClCompile Include="CloseApplicationDlg.cpp" />
+    <ClCompile Include="ConfirmationDlg.cpp" />
+    <ClCompile Include="ErrorDlg.cpp" />
+    <ClCompile Include="InformationDlg.cpp" />
+    <ClCompile Include="LogViewerDlg.cpp" />
+    <ClCompile Include="ModeFullPropCheck.cpp" />
+    <ClCompile Include="ModeFullPropDownload.cpp" />
+    <ClCompile Include="ModeFullPropFinish.cpp" />
+    <ClCompile Include="ModeFullPropHtmlMessage.cpp" />
+    <ClCompile Include="ModeFullPropInstall.cpp" />
+    <ClCompile Include="ModeFullPropLicense.cpp" />
+    <ClCompile Include="ModeFullPropProtection.cpp" />
+    <ClCompile Include="ModeFullPropRollback.cpp" />
+    <ClCompile Include="ModeFullPropSelectUpdate.cpp" />
+    <ClCompile Include="ModeFullPropWelcome.cpp" />
+    <ClCompile Include="ModeFullSheet.cpp" />
+    <ClCompile Include="ModeHidden.cpp" />
+    <ClCompile Include="ModeSilent.cpp" />
+    <ClCompile Include="NotifyDlg.cpp" />
+    <ClCompile Include="ProxySettingsDlg.cpp" />
+    <ClCompile Include="RestoreDlg.cpp" />
+    <ClCompile Include="SelectLanguageDlg.cpp" />
+    <ClCompile Include="WarningDlg.cpp" />
+    <ClCompile Include="CheckForUpdatesProcess.cpp" />
+    <ClCompile Include="UpdateProcess.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug proxy settings|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug proxy settings|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Beta release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Beta release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug restore version|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug restore version|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release without compression|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release without compression|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Updater.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Updater.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CustomBitmapButton.h" />
+    <ClInclude Include="FileVersion.h" />
+    <ClInclude Include="GetOpt.h" />
+    <ClInclude Include="Markup.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="Registry.h" />
+    <ClInclude Include="Rijndael.h" />
+    <ClInclude Include="SystemTray.h" />
+    <ClInclude Include="ThemeUtil.h" />
+    <ClInclude Include="Unzipper.h" />
+    <ClInclude Include="XHTMLStatic.h" />
+    <ClInclude Include="XHyperLink.h" />
+    <ClInclude Include="XNamedColors.h" />
+    <ClInclude Include="ActionPoints.h" />
+    <ClInclude Include="Actions.h" />
+    <ClInclude Include="EventActions.h" />
+    <ClInclude Include="RestoreActions.h" />
+    <ClInclude Include="RollbackActions.h" />
+    <ClInclude Include="CopyFile.h" />
+    <ClInclude Include="CopyFolder.h" />
+    <ClInclude Include="EventData.h" />
+    <ClInclude Include="FileData.h" />
+    <ClInclude Include="IniData.h" />
+    <ClInclude Include="PopupMenuData.h" />
+    <ClInclude Include="RegistryData.h" />
+    <ClInclude Include="SectionData.h" />
+    <ClInclude Include="ShortcutData.h" />
+    <ClInclude Include="EventInfo.h" />
+    <ClInclude Include="RestoreInfo.h" />
+    <ClInclude Include="RollbackInfo.h" />
+    <ClInclude Include="SelfUpdateInfo.h" />
+    <ClInclude Include="UpdateInfo.h" />
+    <ClInclude Include="ConnectionTest.h" />
+    <ClInclude Include="FtpFileObject.h" />
+    <ClInclude Include="HttpFileObject.h" />
+    <ClInclude Include="Internet.h" />
+    <ClInclude Include="NetworkFileObject.h" />
+    <ClInclude Include="Proxy.h" />
+    <ClInclude Include="ProxyInfo.h" />
+    <ClInclude Include="ProxyWPAD.h" />
+    <ClInclude Include="Functions.h" />
+    <ClInclude Include="GarbageCollector.h" />
+    <ClInclude Include="InternalData.h" />
+    <ClInclude Include="Language.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="Path.h" />
+    <ClInclude Include="RiskFunctions.h" />
+    <ClInclude Include="Sections.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="StringFunctions.h" />
+    <ClInclude Include="UserDataCollection.h" />
+    <ClInclude Include="BackUp.h" />
+    <ClInclude Include="CheckVersion.h" />
+    <ClInclude Include="Download.h" />
+    <ClInclude Include="Install.h" />
+    <ClInclude Include="InstallFiles.h" />
+    <ClInclude Include="InstallIni.h" />
+    <ClInclude Include="InstallRegistry.h" />
+    <ClInclude Include="Protection.h" />
+    <ClInclude Include="Restore.h" />
+    <ClInclude Include="Rollback.h" />
+    <ClInclude Include="SelectUpdate.h" />
+    <ClInclude Include="EditLicense.h" />
+    <ClInclude Include="HyperlinkLabel.h" />
+    <ClInclude Include="ResultLabel.h" />
+    <ClInclude Include="TransparentBitmap.h" />
+    <ClInclude Include="TransparentIcon.h" />
+    <ClInclude Include="TransparentStatic.h" />
+    <ClInclude Include="TreeUpdater.h" />
+    <ClInclude Include="WebBrowser.h" />
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="AuthenticationDlg.h" />
+    <ClInclude Include="CloseApplicationDlg.h" />
+    <ClInclude Include="ConfirmationDlg.h" />
+    <ClInclude Include="ErrorDlg.h" />
+    <ClInclude Include="InformationDlg.h" />
+    <ClInclude Include="LogViewerDlg.h" />
+    <ClInclude Include="ModeFullPropCheck.h" />
+    <ClInclude Include="ModeFullPropDownload.h" />
+    <ClInclude Include="ModeFullPropFinish.h" />
+    <ClInclude Include="ModeFullPropHtmlMessage.h" />
+    <ClInclude Include="ModeFullPropInstall.h" />
+    <ClInclude Include="ModeFullPropLicense.h" />
+    <ClInclude Include="ModeFullPropProtection.h" />
+    <ClInclude Include="ModeFullPropRollback.h" />
+    <ClInclude Include="ModeFullPropSelectUpdate.h" />
+    <ClInclude Include="ModeFullPropWelcome.h" />
+    <ClInclude Include="ModeFullSheet.h" />
+    <ClInclude Include="ModeHidden.h" />
+    <ClInclude Include="ModeSilent.h" />
+    <ClInclude Include="NotifyDlg.h" />
+    <ClInclude Include="ProxySettingsDlg.h" />
+    <ClInclude Include="RestoreDlg.h" />
+    <ClInclude Include="SelectLanguageDlg.h" />
+    <ClInclude Include="WarningDlg.h" />
+    <ClInclude Include="CheckForUpdatesProcess.h" />
+    <ClInclude Include="UpdateProcess.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Updater.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\Check icons\Check_1.ico" />
+    <CustomBuild Include="res\Check icons\Check_2.ico" />
+    <CustomBuild Include="res\Check icons\Check_3.ico" />
+    <CustomBuild Include="res\Check icons\Check_4.ico" />
+    <CustomBuild Include="res\Check icons\Check_5.ico" />
+    <CustomBuild Include="res\Download icons\Download_1.ico" />
+    <CustomBuild Include="res\Download icons\Download_2.ico" />
+    <CustomBuild Include="res\Download icons\Download_3.ico" />
+    <CustomBuild Include="res\Download icons\Download_4.ico" />
+    <CustomBuild Include="res\Install icons\v2\Install_1_1.ico" />
+    <CustomBuild Include="res\Install icons\v2\Install_2_1.ico" />
+    <CustomBuild Include="res\Install icons\v2\Install_3_1.ico" />
+    <CustomBuild Include="res\Install icons\v2\Install_4_1.ico" />
+    <CustomBuild Include="res\Install icons\v2\Install_5_1.ico" />
+    <CustomBuild Include="res\Install icons\v2\Install_6_1.ico" />
+    <CustomBuild Include="res\Install icons\v2\Install_7_1.ico" />
+    <CustomBuild Include="res\Install icons\v2\Install_8_1.ico" />
+    <CustomBuild Include="res\LogViewer.ico" />
+    <CustomBuild Include="res\Restore.ico" />
+    <CustomBuild Include="res\Result_error.ico" />
+    <CustomBuild Include="res\Result_good.ico" />
+    <CustomBuild Include="res\Updater.ico" />
+    <CustomBuild Include="res\about.bmp" />
+    <CustomBuild Include="res\authentication.bmp" />
+    <CustomBuild Include="res\bmpQuestionMark.bmp" />
+    <CustomBuild Include="res\confirmation.bmp" />
+    <CustomBuild Include="res\error.bmp" />
+    <CustomBuild Include="res\information.bmp" />
+    <CustomBuild Include="res\language_select.bmp" />
+    <CustomBuild Include="res\logol.bmp" />
+    <CustomBuild Include="res\logos.bmp" />
+    <CustomBuild Include="res\updater.bmp" />
+    <CustomBuild Include="res\updater_neg.bmp" />
+    <CustomBuild Include="res\warning.bmp" />
+    <CustomBuild Include="res\wizard_header.bmp" />
+    <CustomBuild Include="res\Hand.cur" />
+    <CustomBuild Include="res\UpdaterCopy.exe">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\close_application.bmp" />
+    <CustomBuild Include="res\Updater.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

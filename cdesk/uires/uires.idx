@@ -1,0 +1,17 @@
+﻿<resource>
+  <UIDEF>
+    <file name="XML_INIT" path="xml\init.xml"  />
+  </UIDEF>
+  <LAYOUT>
+    <file name="XML_MAINWND" path="xml\dlg_main.xml"  />
+      </LAYOUT>
+  <IMG>
+        <file name="traymenu_icons" path="image\traymenu_icons.png"  />
+          </IMG>
+  <ICON>
+    <file name="ICON_LOGO"  path="image\soui.ico"    />
+  </ICON>
+      <SMENU>
+    <file name="menu_tray" path="xml\menu_tray.xml"  />
+  </SMENU>
+  </resource>
